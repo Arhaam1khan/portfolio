@@ -62,26 +62,26 @@ export default function ContactSection() {
                   <h4 className="text-2xl font-bold text-slate-900 dark:text-white tracking-wide">Send Me a Message</h4>
                 </div>
                 
-                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <form className="space-y-6" action="https://formspree.io/f/mjgpkkqn" method="POST">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2 text-left">
                       <label className="text-sm font-bold tracking-wide text-foreground">Your Name <span className="text-primary">*</span></label>
-                      <input type="text" placeholder="John Doe" className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all font-mono text-sm" />
+                      <input type="text" name="name" required placeholder="John Doe" className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all font-mono text-sm" />
                     </div>
                     <div className="space-y-2 text-left">
                       <label className="text-sm font-bold tracking-wide text-foreground">Your Email <span className="text-primary">*</span></label>
-                      <input type="email" placeholder="john@example.com" className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all font-mono text-sm" />
+                      <input type="email" name="email" required placeholder="john@example.com" className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all font-mono text-sm" />
                     </div>
                   </div>
                   
                   <div className="space-y-2 text-left">
                     <label className="text-sm font-bold tracking-wide text-foreground">Subject <span className="text-primary">*</span></label>
-                    <input type="text" placeholder="What's this about?" className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all font-mono text-sm" />
+                    <input type="text" name="subject" required placeholder="What's this about?" className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all font-mono text-sm" />
                   </div>
                   
                   <div className="space-y-2 text-left">
                     <label className="text-sm font-bold tracking-wide text-foreground">Message <span className="text-primary">*</span></label>
-                    <textarea rows={4} placeholder="Tell me more about your project or idea..." className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all resize-none font-mono text-sm"></textarea>
+                    <textarea rows={4} name="message" required placeholder="Tell me more about your project or idea..." className="w-full bg-alt-bg/60 border border-slate-300 dark:border-white/10 rounded-lg px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all resize-none font-mono text-sm"></textarea>
                   </div>
 
                   <button type="submit" className="w-full bg-primary/20 border border-primary text-primary hover:bg-primary hover:text-black font-bold text-lg py-4 rounded-lg flex items-center justify-center gap-3 transition-all duration-300">
