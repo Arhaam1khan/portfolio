@@ -14,9 +14,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Air-Gapped Visual Transfer | Arham Khan",
-  description:
-    "Featured portfolio project showcasing the Windows-ready Air-Gapped Visual Transfer app and its future cross-platform roadmap.",
+  title: "Arham Khan - Cybersecurity Specialist",
+  description: "Personal portfolio of Arham Khan, Cybersecurity Specialist & B.Tech CSE Student.",
 };
 
 export default function RootLayout({

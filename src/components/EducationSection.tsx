@@ -7,23 +7,26 @@ export default function EducationSection() {
   const education = [
     {
       institution: "Lovely Professional University",
-      degree: "B.Tech Computer Science and Engineering",
-      date: "Aug 2023 - Present",
-      grade: "CGPA: 7.62",
+      degree: "Computer Science and Engineering",
+      date: "August 2023 - Present",
+      grade: "CGPA: 7.96",
+      location: "Phagwara, Punjab",
       icon: <GraduationCap className="w-8 h-8 text-primary" />,
     },
     {
       institution: "Ryan International School",
-      degree: "Intermediate (12th Grade)",
+      degree: "12th with Science",
       date: "2021 - 2022",
-      grade: "78%",
+      grade: "Percentage: 78%",
+      location: "Shahjahanpur, Uttar Pradesh",
       icon: <BookOpen className="w-8 h-8 text-primary" />,
     },
     {
       institution: "Ryan International School",
-      degree: "Matriculation (10th Grade)",
+      degree: "10th with Science",
       date: "2019 - 2020",
-      grade: "77%",
+      grade: "Percentage: 77%",
+      location: "Shahjahanpur, Uttar Pradesh",
       icon: <Scroll className="w-8 h-8 text-primary" />,
     },
   ];
@@ -74,7 +77,10 @@ export default function EducationSection() {
                     {edu.date}
                   </div>
                   <div className="text-slate-700 dark:text-white/60 text-sm font-bold">
-                     Grade: <span className="text-slate-900 dark:text-white font-mono">{edu.grade}</span>
+                     {edu.grade}
+                  </div>
+                  <div className="text-slate-700 dark:text-white/60 text-sm">
+                     {edu.location}
                   </div>
                </div>
             </motion.div>

@@ -7,21 +7,20 @@ const skills = [
   {
     category: "Languages",
     icon: <Code2 className="w-6 h-6 text-primary" />,
-    items: ["C/C++", "Python"],
+    items: ["C/C++", "Java", "Python"],
   },
   {
     category: "Tools & Platforms",
     icon: <Shield className="w-6 h-6 text-primary" />,
     items: [
       "Nmap", "Wireshark", "Masscan", "Nessus", "Kali Linux",
-      "macOS", "Windows", "ELK Stack", "Sysmon", "Metasploit",
-      "Burp Suite", "SQLmap", "Git"
+      "macOS", "Windows", "Git", "GitHub", "ELK Stack", "Sysmon"
     ],
   },
   {
     category: "Soft Skills",
     icon: <User className="w-6 h-6 text-primary" />,
-    items: ["Problem-Solving", "Team Player", "Adaptability"],
+    items: ["Problem-Solving", "Team Player", "Adaptability", "Threat Hunting"],
   },
 ];
 
@@ -51,19 +50,19 @@ export default function AboutSection() {
             className="space-y-6 text-foreground text-lg leading-relaxed"
           >
             <p>
-              I am <span className="text-primary font-bold">Arham Khan</span>, a passionate Cybersecurity Specialist and B.Tech CSE student at Lovely Professional University. My journey in the tech world revolves around understanding vulnerabilities, analyzing malware behavior, and engineering robust threat monitoring solutions.
+              I am <span className="text-primary font-bold">Arham Khan</span>, a cybersecurity-focused Computer Science student based in Shahjahanpur, Uttar Pradesh. My professional interest lies in security monitoring, malware analysis, and building practical defensive systems with modern tooling.
             </p>
             <p>
-              With strong hands-on experience in the ELK stack, network scanning, and Python scripting for security analysis, I bridge the gap between theoretical knowledge and practical application. I am dedicated to continuous learning, securing systems, and staying ahead of modern cyber threats.
+              Through hands-on projects, training, and labs, I have built practical experience in ELK-based monitoring, endpoint telemetry collection, malware hash analysis, and defensive workflow design. I am especially interested in incident response, threat hunting, and developing secure, reliable software workflows.
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
               <div className="p-4 border border-slate-300 dark:border-white/10 rounded-xl bg-background flex flex-col justify-center items-center">
-                <span className="text-3xl font-heading font-bold text-slate-900 dark:text-white">2+</span>
+                <span className="text-3xl font-heading font-bold text-slate-900 dark:text-white">2</span>
                 <span className="text-sm">Major Projects</span>
               </div>
               <div className="p-4 border border-slate-300 dark:border-white/10 rounded-xl bg-background flex flex-col justify-center items-center">
-                <span className="text-3xl font-heading font-bold text-slate-900 dark:text-white">3</span>
-                <span className="text-sm">Certifications</span>
+                <span className="text-3xl font-heading font-bold text-slate-900 dark:text-white">5</span>
+                <span className="text-sm">Certificates</span>
               </div>
               <a
                 href="https://drive.google.com/uc?export=download&id=1VTzM_9vdYltNNIV8B9f3OEREkqHZ5xM0"

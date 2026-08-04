@@ -6,10 +6,12 @@ import { motion } from "framer-motion";
 import { Mail, Terminal, FileText, Download } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex text-center lg:text-left items-center justify-center pt-20 overflow-hidden cyber-grid text-slate-900 dark:text-white">
+      {/* Background glowing orb */}
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] -z-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -22,42 +24,34 @@ export default function HeroSection() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium font-inter">
               <Terminal className="w-4 h-4" />
-              <span>Air-Gapped Visual Transfer</span>
+              <span>Cybersecurity Specialist</span>
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold font-heading leading-tight">
-              <span className="text-2xl lg:text-3xl text-foreground font-mono font-medium block mb-2">featured app</span>
-              <span className="text-primary glow-text">Windows release is ready to download</span>
+              <span className="text-2xl lg:text-3xl text-foreground font-mono font-medium block mb-2">root@arham:~#</span>
+              <span className="text-primary glow-text">Arham Khan</span>
             </h1>
 
-            <p className="text-lg text-foreground max-w-2xl">
-              A secure file-transfer desktop app built around QR-based visual handoff. It keeps the exchange offline and air-gapped while still delivering a clean, fast, and easy-to-use workflow.
+            <p className="text-lg text-foreground max-w-lg">
+              B.Tech CSE Student focused on securing digital landscapes. Ready to combat threats, analyze malware, and build robust architectures.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 pt-4">
+            <div className="flex items-center gap-4 pt-4">
               <Link
-                href="https://github.com/Arhaam1khan/air-app/releases/latest"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#projects"
                 className="px-6 py-3 bg-primary text-black font-semibold rounded-md hover:bg-primary/90 transition glow-box"
               >
-                Download Windows App
+                View My Work
               </Link>
               <Link
-                href="https://github.com/Arhaam1khan/air-app"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:khan19arham@gmail.com"
                 className="px-6 py-3 border border-primary text-primary font-semibold rounded-md hover:bg-primary/10 transition"
               >
-                View Source Repo
+                Get in touch
               </Link>
             </div>
 
-            <div className="rounded-2xl border border-primary/25 bg-primary/5 px-4 py-3 text-sm text-foreground">
-              <strong className="text-primary">Platform status:</strong> Windows version ready to download • macOS / iOS / Android versions coming soon
-            </div>
-
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-6">
               <Link href="https://www.linkedin.com/in/arham-khan-301435281/" target="_blank" className="p-2 border border-foreground/30 rounded-md text-foreground hover:text-primary hover:border-primary transition" aria-label="LinkedIn">
                 <FaLinkedin className="w-5 h-5" />
               </Link>
@@ -89,16 +83,16 @@ export default function HeroSection() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
                 </div>
-                <div className="mx-auto text-xs text-foreground/50 tracking-wider">air-gap transfer</div>
+                <div className="mx-auto text-xs text-foreground/50 tracking-wider">bash - root@shield</div>
               </div>
               <div className="p-6 space-y-4 text-left">
-                <p><span className="text-slate-900 dark:text-white font-bold">&gt;</span> <span className="text-primary">python</span> sender.py --scan</p>
-                <p className="text-green-600 dark:text-green-400 opacity-90">[ OK ] QR carousel initialized.</p>
-                <p className="text-green-600 dark:text-green-400 opacity-90">[ OK ] ZIP payload staged in memory.</p>
-                <p><span className="text-slate-900 dark:text-white font-bold">&gt;</span> <span className="text-primary">receiver</span> --capture camera</p>
-                <p className="text-slate-800 dark:text-foreground">Receiver reconstructs files from QR frames with no internet dependency.</p>
-                <p><span className="text-slate-900 dark:text-white font-bold">&gt;</span> <span className="text-primary">status</span> --release</p>
-                <p className="text-slate-800 dark:text-foreground leading-relaxed">Windows build is available now. macOS, iOS, and Android are in the roadmap.</p>
+                <p><span className="text-slate-900 dark:text-white font-bold">&gt;</span> <span className="text-primary">systemctl status</span> security-protocols</p>
+                <p className="text-green-600 dark:text-green-400 opacity-90">[ OK ] Local defenses active.</p>
+                <p className="text-green-600 dark:text-green-400 opacity-90">[ OK ] Threat monitoring online.</p>
+                <p><span className="text-slate-900 dark:text-white font-bold">&gt;</span> <span className="text-primary">whoami</span></p>
+                <p className="text-slate-800 dark:text-foreground">Arham Khan - Cybersecurity Student</p>
+                <p><span className="text-slate-900 dark:text-white font-bold">&gt;</span> <span className="text-primary">cat</span> mission_statement.txt</p>
+                <p className="text-slate-800 dark:text-foreground leading-relaxed">"To engineer robust monitoring solutions, analyze malware behavior, and safeguard critical infrastructure against emerging cyber threats."</p>
                 <p className="animate-pulse"><span className="text-slate-900 dark:text-white font-bold">&gt;</span> _</p>
               </div>
             </div>
