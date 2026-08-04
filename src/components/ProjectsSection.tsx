@@ -29,7 +29,7 @@ const appPlatforms = [
   {
     name: "Windows",
     status: "Download",
-    href: "https://github.com/Arhaam1khan/air-app/releases/latest",
+    href: "https://github.com/Arhaam1khan/Pep-Project/releases/latest/download/AirGappedTransfer_v1.0.zip",
     isDownload: true,
   },
   {
